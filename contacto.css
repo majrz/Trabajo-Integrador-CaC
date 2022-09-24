@@ -1,0 +1,34 @@
+#Contacto form{
+    width: 450px;
+    margin: auto;
+    background:rgb(209, 206, 206);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+#Contacto h2{
+    color: rgb(13, 13, 13);
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+#Contacto input, textarea, button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}   
+
+#Contacto textarea{
+min-height: 100px;
+max-height: 200px;
+max-width: 100%;
+
+}

@@ -37,6 +37,11 @@ let categoria       = document.getElementById("categoriaTickets");
 
 function borrar_total_a_pagar() {
     totalpago.innerHTML = "";
+    nombreInput.value = "";
+    apellidoInput.value = "";
+    correoInput.value = "";
+    cantidadInput.value = "";
+ 
 }
 btnBorrar.addEventListener('click', borrar_total_a_pagar);
 btnResumen.addEventListener('click', total_a_pagar);

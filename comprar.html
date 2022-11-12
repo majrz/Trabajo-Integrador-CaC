@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="shortcut icon" href="4PATAS5.png"> 
+
+    <title> Cuatro Patas Online </title> 
+
+</head>
+
+<body>
+    <header> 
+    
+<div class="contenedor">
+  <a href= "index.html">
+    <h1> <img src="4PATAS5.png" alt = "LOGO" class="logo">   CUATRO PATAS </a> </h1>
+    <input type="checkbox" id="menu-bar">
+    <label for="menu-bar" class="btncheck">
+        <i class="fa-sharp fa-solid fa-bars"></i>
+    </label>
+
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="">Sobre Nosotros</a>
+    <a href="">Productos</a>
+    <a href="index.html">Contacto</a>
+</nav>
+</div>
+</header>
+
+<section class="section-comprar"> 
+<div class = "container">
+  <div class = "row">
+
+  <div class = "col-md-4">
+    <div class="card border-primary mb-3" style="max-width: 18rem;">
+      <div class="card-header">Header1</div>
+      <div class="card-body">
+        <h5 class="card-title">Tienen un descuento</h5>
+        <p class="card-text"> <b> 80% </b><br> * presentar documentación</p>
+      </div>
+    </div>
+  </div>
+
+
+    <div class = "col-md-4">
+      <div class="card border-info mb-3" style="max-width: 18rem;">
+        <div class="card-header">Header2</div>
+        <div class="card-body">
+          <h5 class="card-title">Tienen un descuento</h5>
+          <p class="card-text"> <b>50%</b> <br> * presentar documentación </p>
+        </div>
+      </div>
+    </div>
+  
+      <div class = "col-md-4">
+        <div class="card border-warning mb-3" style="max-width: 18rem;">
+          <div class="card-header">Header3</div>
+          <div class="card-body">
+            <h5 class="card-title">Tienen un descuento</h5>
+            <p class="card-text"><b>15%</b><br> * presentar documentación</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+  
+      <h2 class="titulo"> Venta <span> Valor de ticket $200 </span> </h2>
+
+      <div class = "container">
+        <form class = "row g-3 m-3" >
+
+        <div class = "col-6">
+            <input type = "Nombre" class ="form-control" id="nombreInput" placeholder="Nombre">
+        </div>
+
+          <div class = "col-6">
+          <input type = "Apellido" class ="form-control" id="apellidoInput" placeholder="Apellido">
+          </div>
+
+          <div class = "col-12">
+            <input type = "Correo" class ="form-control" id="correoInput" placeholder="Correo">
+            </div>
+
+          <div class = "col-6">
+          <label for = "cantidadInput" class= "form-label"> Cantidad </label>
+          <input type = "number" class ="form-control" id="cantidadInput" placeholder="Cantidad" min="1" required>
+          </div>
+          
+          <div class = "col-6">
+            <label for = "categoriaInput" class= "form-label"> Categoría </label>
+            <select class="form-select" aria-label="Default select example" id="categoriaTickets">
+              <option selected>Seleccione</option>
+              <option value="0">Sin Categoría</option>
+              <option value="1">Header1</option>
+              <option value="2">Header2</option>
+              <option value="3">Header3</option>
+            </select>
+            </div>
+
+
+            <div class = "col-12">
+            <div class="alert alert-primary" role="alert"> 
+              Total a Pagar:$  <span class="totalticket"  class="align-middle" id="totalpago"></span>
+            </div>
+            </div>
+
+            <div class="col-6">
+              <button type="button" class="btn btn-primary" id="btnBorrar">Borrar</button>
+              
+            </div>
+            <div class="col-6">
+              <button type="button" class="btn btn-primary" id="btnResumen">Resumen</button>
+              
+            </div>
+            
+        </form>
+        </div>
+    </section>
+    
+    
+<footer>
+  
+  <div class="sociales">
+  <a href="#" class="facebook"> <i class=" fab fa-facebook-f"> </i></a>
+  <a href="#" class="twitter"> <i class=" fab fa-twitter"> </i></a>
+  <a href="#" class="instagram"> <i class=" fab fa-instagram"> </i></a>
+  
+  </div>
+  
+  </footer>
+
+<script src="comprar.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+
+
+<style>
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section-comprar .container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-comprar { padding-top: 7rem; 
+}
+
+  
+  a { text-decoration: none;
+    color:#fff
+}
+ 
+.btn {
+    background: #96c93e; 
+    color: #fff !important;
+    border: none;
+
+  }
+.col-6 .btn:hover { background: #74aa17; }
+
+
+.card-header{
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+  
+.card-body {
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+  .titulo span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.2rem;
+} 
+
+</style>
+
+</html>

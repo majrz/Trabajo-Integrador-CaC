@@ -58,9 +58,12 @@
 	margin-bottom: 5px;
 }
 .card .contenido-card a:hover{
-	background: #2fb4cc;
+	background: #25a342;
 	color: #fff;
+	border:1px solid #25a342;
 }
+
+
 @media only screen and (min-width:320px) and (max-width:768px){
 	.container-card{
 		flex-wrap: wrap;
